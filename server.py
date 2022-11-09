@@ -6,7 +6,7 @@ import os
 def hello_world(request):
     name = os.environ.get('NAME')
     if name == None or len(name) == 0:
-        name = "Welcome"
+        name = "Welcome to AWS App Runner"
     message =  "Hello World, " + name + "!\n"
     return Response(message)
 
